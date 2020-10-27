@@ -43,7 +43,7 @@ function display() {
 
 function findPrevNode(item) {
 	var currNode = this.head;
-	while(currNode..next.element != item) {
+	while(currNode.next.element != item) {
 		if (currNode.next.next === null) {
 			return false;
 		} else {

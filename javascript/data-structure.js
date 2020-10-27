@@ -1,5 +1,5 @@
 /* Array practice */
-No.1
+// No.1
 function Grades() {
 	this.point = 0;
 	this.num = 0;
@@ -17,7 +17,7 @@ function addPoint(point) {
 }
 
 
-No.2
+// No.2
 /* 排序sort */
 var words = ["apple", "orange", "banana"];
 words.sort();
@@ -34,7 +34,7 @@ function reverseOrder(a, b) {
 }
 
 /* Stack 进制转换 */
-No.3
+// No.3
 function mulBase(num, base) {
 	var s = new Stack();
 	do {

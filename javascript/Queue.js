@@ -26,8 +26,8 @@ function back() {
 }
 
 function toString() {
-	var retStr = "";
-	for (var i = 0; i < this.dataStore.length; ++i) {
+	let retStr = "";
+	for (let i = 0; i < this.dataStore.length; ++i) {
 		retStr += this.dataStore[i] + "\n";
 	}
 	return retStr;

@@ -19,11 +19,11 @@ function addPoint(point) {
 
 // No.2
 /* 排序sort */
-var words = ["apple", "orange", "banana"];
+let words = ["apple", "orange", "banana"];
 words.sort();
 words.reverse();
 
-var nums = [1,2,3,4,5,6]
+let nums = [1,2,3,4,5,6]
 nums.sort(positiveOrder);
 nums.sort(reverseOrder);
 function positiveOrder(a, b) {
@@ -36,12 +36,12 @@ function reverseOrder(a, b) {
 /* Stack 进制转换 */
 // No.3
 function mulBase(num, base) {
-	var s = new Stack();
+	let s = new Stack();
 	do {
 		s.push(num%base);
 		num = Math.floor(num/base);
 	} while (num > 0);
-	var converted = "";
+	let converted = "";
 	do {
      	converted += s.pop();
 	} while(s.length > 0);

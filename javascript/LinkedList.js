@@ -15,7 +15,7 @@ function LinkedList() {
 }
 
 function find(item) {
-	var currNode = this.head;
+	let currNode = this.head;
 	while(currNode.element != item) {
 		if (currNode.next === null) {
 			return false;
@@ -27,14 +27,14 @@ function find(item) {
 }
 
 function insert(newElement, item) {
-	var newNode = new Node(newElement);
-	var current = this.find(item);
+	let newNode = new Node(newElement);
+	let current = this.find(item);
 	newNode.next = current.next;
 	current.next = newNode;
 }
 
 function display() {
-	var currNode = this.head;
+	let currNode = this.head;
 	if (currNode.next !== null) {
 		print(currNode.next.element);
 		currNode = currNode.next;
@@ -42,7 +42,7 @@ function display() {
 }
 
 function findPrevNode(item) {
-	var currNode = this.head;
+	let currNode = this.head;
 	while(currNode.next.element != item) {
 		if (currNode.next.next === null) {
 			return false;
@@ -54,7 +54,7 @@ function findPrevNode(item) {
 }
 
 function remove(item) {
-	var prevNode = this.findPrevNode(item);
+	let prevNode = this.findPrevNode(item);
 	if (prevNode.next.next !== null) {
 		prevNode.next = prevNode.next.next;
 	} else {

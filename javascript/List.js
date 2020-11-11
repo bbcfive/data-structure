@@ -28,7 +28,7 @@ function append(element) {
 }
 
 function find(element) {
-	for (var i = 0; i < this.dataStore.length; ++i) {
+	for (let i = 0; i < this.dataStore.length; ++i) {
 		if (this.dataStore[i] == element) {
 			return i;
 		}
@@ -37,7 +37,7 @@ function find(element) {
 }
 
 function remove(element) {
-	var foundAt = this.find(element);
+	let foundAt = this.find(element);
 	if (foundAt > -1) {
 		this.dataStore.splice(foundAt, 1);
 		--this.listSize;
@@ -55,7 +55,7 @@ function toString() {
 }
 
 function insert(element, after) {
-	var insertPos = this.find(after);
+	let insertPos = this.find(after);
 	if (insertPos > -1) {
 		this.dataStore.splice(insertPos+1, 0, element);
 		++this.listSize;
@@ -71,7 +71,7 @@ function clear() {
 }
 
 function contains(element) {
-	for (var i = 0; i < this.dataStore.length; ++i) {
+	for (let i = 0; i < this.dataStore.length; ++i) {
 		if (this.dataStore[i] == element) {
 			return true;
 		}
